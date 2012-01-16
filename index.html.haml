@@ -3,11 +3,49 @@
   %head
     %meta{:charset => 'UTF-8'}
     %title Electronic Data Magnetics
-    %link{:rel => 'stylesheet', :type => 'text/css', :media => 'screen, projector, print', :href => '/stylesheets/app.css'}
+    %link{:rel => 'stylesheet', :type => 'text/css', :media => 'screen, projector, print', :href => 'stylesheets/app.css'}
     /[if IE lt 9]
-      %link{:rel => 'stylesheets', :type => 'text/css', :href => '/stylesheets/ie.css'}
+      %link{:rel => 'stylesheets', :type => 'text/css', :href => 'stylesheets/ie.css'}
   %body
     .container
-      .row
-        .eight.columns
-          %p This is a test
+      #header= render '_header.html.haml'
+      #content
+        .row
+          -#This is a centering hack, find a better solution!!!!!
+          .nine.columns.centered
+            %img{:src => 'images/wireframe/banner_728x210.gif'}
+        .row
+          %hr
+        .row
+          .twelve.columns
+            %h5
+              Electronic Data Magnetics, Inc. is a Manufacturer of
+              %strong
+                Technically Advanced Printed Products.
+              These Products includeMagnetic Stripe and RFID Cards and Tickets. EDM has been supplying the Transit Industry for over 25 years.
+        .row
+          %hr
+        .row
+          .six.columns
+            %p
+              Electronic Data Magnetics, Inc. is a World Leader in the Mass Transit market. We offer both large and small agencies superior products and services. Our experience and personnel set EDM above the competition. Our customers include the New York City Transit Authority, the Chicago Transit Authority, the South Eastern Pennsylvania Transit Authority, Los Angeles Metro, Bay Area Rapid Transit Authority as well as many other major U.S. transit agencies
+          .six.columns
+            %p
+              We provide RFID and Magnetic Striped products on thin gauge paper and plastics. EDM has the ability to print 4-color process EDM provides both high and low coercivity magnetic stripe cards and tickets, while offering encoding services. In the RFID arena, EDM works with various chips specializing in the MiFare 1K to 4K and the MiFare Ultra-lite products for transit. EDM, Inc. is the only domestic approved vendor for Cubic Transportation Systems supplying the MiFare Ultra-lite products. 
+        .row
+          .three.columns
+            %p stuff in three
+          .three.columns
+            %p stuff in three
+          .three.columns
+            %p stuff in three
+          .three.columns
+            %p stuff in three
+      #footer= render '_footer.html.haml'
+    -#Include those pesky js files
+    %script{:src => 'javascripts/jquery.min.js'}
+    %script{:src => 'javascripts/modernizr.foundation.js'}
+    %script{:src => 'javascripts/jquery.placeholder.min.js'}
+    %script{:src => 'javascripts/jquery.reveal.js'}
+    -#Form js stuff not included yet, if needed place before the call to app.js
+    %script{:src => 'javascripts/app.js'}
