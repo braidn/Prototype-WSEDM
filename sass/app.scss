@@ -12,3 +12,12 @@
 
 // Project Styles
 //-----------------------------------------
+#content {
+  .row {
+    .six.columns {
+      p {
+        margin-top: 15px;
+      }
+    }
+  }
+}
