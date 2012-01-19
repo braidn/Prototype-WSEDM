@@ -13,7 +13,7 @@
         .row
           -#This is a centering hack, find a better solution!!!!!
           .eight.columns.push-two
-            %img{:src => 'images/wireframe/banner_728x210.gif'}
+            %img{:src => 'images/wireframe/banner_728x210.gif', :alt => 'Overflow: Hidden No More'}
         .row
           %hr
         .row
@@ -24,14 +24,14 @@
                 Technically Advanced Printed Products.
               These Products includeMagnetic Stripe and RFID Cards and Tickets. EDM has been supplying the Transit Industry for over 25 years.
         .row
-          %hr
+          .four.columns
+            %img{:src => '/Users/Griff/Dropbox/Design/Wireframin/banner_250x250.gif'}
+          .four.columns
+            %img{:src => '/Users/Griff/Dropbox/Design/Wireframin/banner_250x250.gif'}
+          .four.columns
+            %img{:src => '/Users/Griff/Dropbox/Design/Wireframin/banner_250x250.gif'}
         .row
-          .four.columns
-            %img{:src => '/Users/Griff/Dropbox/Design/Wireframin/banner_250x250.gif'}
-          .four.columns
-            %img{:src => '/Users/Griff/Dropbox/Design/Wireframin/banner_250x250.gif'}
-          .four.columns
-            %img{:src => '/Users/Griff/Dropbox/Design/Wireframin/banner_250x250.gif'}
+          %hr
         .row
           .six.columns
             %p
@@ -54,5 +54,6 @@
     %script{:src => 'javascripts/modernizr.foundation.js'}
     %script{:src => 'javascripts/jquery.placeholder.min.js'}
     %script{:src => 'javascripts/jquery.reveal.js'}
+    %script{:src => 'javascripts/jquery.orbit-1.3.0.js'}
     -#Form js stuff not included yet, if needed place before the call to app.js
     %script{:src => 'javascripts/app.js'}

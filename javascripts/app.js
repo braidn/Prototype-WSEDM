@@ -90,4 +90,9 @@ $(document).ready(function () {
 	/* DISABLED BUTTONS ------------- */
 	/* Gives elements with a class of 'disabled' a return: false; */
 
+  //APPLICATION SPecific Js begins here
+  $(window).load(function() {
+    $('#featured').orbit();
+  });
+
 });
