@@ -14,22 +14,39 @@
           -#This is a centering hack, find a better solution!!!!!
           .eight.columns.push-two
             %img{:src => 'images/wireframe/banner_728x210.gif', :alt => 'Overflow: Hidden No More'}
-        .row
-          %hr
+        -#.row
+          -#%hr
         .row
           .twelve.columns
-            %h5
-              Electronic Data Magnetics, Inc. is a Manufacturer of
-              %strong
-                Technically Advanced Printed Products.
-              These Products includeMagnetic Stripe and RFID Cards and Tickets. EDM has been supplying the Transit Industry for over 25 years.
+            .panel
+              %h5
+                Electronic Data Magnetics, Inc. is a Manufacturer of
+                %strong
+                  Technically Advanced Printed Products.
+                These Products includeing Magnetic Stripe and RFID Cards and Tickets. We have been supplying the Transit Industry for over 25 years.
         .row
           .four.columns
             %img{:src => '/Users/Griff/Dropbox/Design/Wireframin/banner_250x250.gif'}
-          .four.columns
-            %img{:src => '/Users/Griff/Dropbox/Design/Wireframin/banner_250x250.gif'}
-          .four.columns
-            %img{:src => '/Users/Griff/Dropbox/Design/Wireframin/banner_250x250.gif'}
+          .eight.columns
+            %dl.nice.contained.tabs
+              %dd
+                %a{:href => '#tab1'}
+                  Product1
+              %dd
+                %a{:href => '#tab2'}
+                  Product2
+              %dd
+                %a{:href => '#tab3'}
+                  Product3
+            %ul.nice.tabs-content.contained
+              %li{:class => 'active', :id => 'tab1Tab'}
+                Magnetic Stripe
+              %li#tab2Tab
+                RFID
+              %li#tab3Tab
+                Airline Tickets
+          -#.four.columns
+            -#%img{:src => '/Users/Griff/Dropbox/Design/Wireframin/banner_250x250.gif'}
         .row
           %hr
         .row
