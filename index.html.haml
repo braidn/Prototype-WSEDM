@@ -13,24 +13,24 @@
         .row
           -#This is a centering hack, find a better solution!!!!!
           .eight.columns.push-two
-            %img{:src => 'images/wireframe/banner_728x210.gif', :alt => 'Overflow: Hidden No More'}
+            %img{:src => '/Users/Griff/Dropbox/Design/Wireframin/banner_728x210.gif', :alt => 'Overflow: Hidden No More'}
         -#.row
           -#%hr
         .row
           .twelve.columns
             .panel
-              %h5
+              %h5{:class => 'justified-text'}
                 Electronic Data Magnetics, Inc. is a Manufacturer of
                 %strong
                   Technically Advanced Printed Products.
-                These Products includeing Magnetic Stripe and RFID Cards and Tickets. We have been supplying the Transit Industry for over 25 years.
+                These Products include Magnetic Stripe, RFID Cards and Tickets. We have been supporting the Transit Industry for over 25 years.
         .row
           .four.columns
             %img{:src => '/Users/Griff/Dropbox/Design/Wireframin/banner_250x250.gif'}
           .eight.columns
             %dl.nice.contained.tabs
               %dd
-                %a{:href => '#tab1'}
+                %a{:href => '#tab1', :class => 'active'}
                   Product1
               %dd
                 %a{:href => '#tab2'}
@@ -71,6 +71,7 @@
     %script{:src => 'javascripts/modernizr.foundation.js'}
     %script{:src => 'javascripts/jquery.placeholder.min.js'}
     %script{:src => 'javascripts/jquery.reveal.js'}
-    %script{:src => 'javascripts/jquery.orbit-1.3.0.js'}
+    %script{:src => 'javascripts/jquery.orbit-1.4.0.js'}
+    %script{:src => 'javascripts/jquery.tooltips.min.js'}
     -#Form js stuff not included yet, if needed place before the call to app.js
     %script{:src => 'javascripts/app.js'}
